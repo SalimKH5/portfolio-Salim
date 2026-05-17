@@ -11,7 +11,7 @@
   "bio": [
     "Hey, I'm Salim — a fullstack developer and data engineer based in France with over 3 years of professional experience. I specialize in bridging the gap between robust web architectures and intelligent, AI-driven systems.",
     "I build highly performant, scalable applications using Next.js on the frontend, and I architect secure, enterprise-grade backends using .NET and Python.",
-    "Currently, I am heavily focused on the intersection of Data Engineering and Artificial Intelligence. I actively integrate Large Language Models (like Claude) and RAG (Retrieval-Augmented Generation) pipelines into modern applications, turning raw data into interactive, actionable insights."
+    "Currently, I am heavily focused on the intersection of Data Engineering and Artificial Intelligence. I actively integrate Large Language Models  and RAG (Retrieval-Augmented Generation) pipelines into modern applications, turning raw data into interactive, actionable insights."
   ],
   "stats": [
     {
@@ -163,7 +163,6 @@
       "icon": "ti-brand-instagram",
       "color": "purple",
       "featured": false,
-      "github": "https://github.com/SalimKH5/Snaply",
       "live": "https://snaply-git-main-khadir-salims-projects.vercel.app/",
       "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-af3bf.appspot.com/o/instagrame%20clone.png?alt=media&token=55d1fc1e-bc3a-4147-8331-41a90dae62cd",
       "stack": [

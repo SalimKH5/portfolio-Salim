@@ -11,7 +11,7 @@
   "bio": [
     "Bonjour, je suis Salim — un développeur fullstack et ingénieur data basé en France, avec plus de 3 ans d'expérience professionnelle. Je me spécialise dans la création de ponts entre des architectures web robustes et des systèmes intelligents pilotés par l'IA.",
     "Je conçois des applications très performantes et évolutives en utilisant Next.js pour le frontend, et j'élabore des backends sécurisés de niveau entreprise avec .NET et Python.",
-    "Actuellement, je me concentre fortement sur l'intersection de l'Ingénierie des Données et de l'Intelligence Artificielle. J'intègre activement des Grands Modèles de Langage (comme Claude) et des pipelines RAG (Génération Augmentée par la Recherche) dans des applications modernes, transformant des données brutes en insights interactifs et exploitables."
+    "Actuellement, je me concentre fortement sur l'intersection de l'Ingénierie des Données et de l'Intelligence Artificielle. J'intègre activement des Grands Modèles de Langage & a> et des pipelines RAG (Génération Augmentée par la Recherche) dans des applications modernes, transformant des données brutes en insights interactifs et exploitables."
   ],
   "stats": [
     {
@@ -135,7 +135,6 @@
       "icon": "ti-tools-kitchen-2",
       "color": "coral",
       "featured": true,
-      "github": "https://github.com/SalimKH5",
       "live": "https://munchmate.salimfree.com/",
       "adminUrl": "https://pro.salimfree.com/",
       "image": "https://munchmate.salimfree.com/_next/image?url=%2FBanner3.jpg&w=3840&q=75",

@@ -90,7 +90,7 @@ export default function Navbar({ currentLang }: NavbarProps) {
         <div className="hidden md:flex items-center gap-6">
 
           {/* Language Toggle */}
-          <div className="flex items-center gap-2 font-mono text-[12px] border-r border-neutral-200 dark:border-white/[0.1] pr-6" role="navigation" aria-label="Language Selector">
+          <div className="flex items-center cursor-pointer gap-2 font-mono text-[12px] border-r border-neutral-200 dark:border-white/[0.1] pr-6" role="navigation" aria-label="Language Selector">
             <button
               onClick={() => handleLanguageChange('en')}
               className={`transition-colors focus-visible:outline-none ${currentLang === 'en' ? 'text-[#22d3ee] font-bold' : 'text-neutral-400 dark:text-[#5a5754] hover:text-neutral-900 dark:hover:text-[#f0ede8]'}`}
@@ -109,7 +109,7 @@ export default function Navbar({ currentLang }: NavbarProps) {
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
-            className="text-neutral-500 dark:text-[#9b9790] hover:text-neutral-900 dark:hover:text-[#f0ede8] transition-colors flex items-center justify-center p-1 focus-visible:outline-none"
+            className="text-neutral-500 cursor-pointer dark:text-[#9b9790] hover:text-neutral-900 dark:hover:text-[#f0ede8] transition-colors flex items-center justify-center p-1 focus-visible:outline-none"
             aria-label={resolvedTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
           >
             {themeIcon}
@@ -124,7 +124,7 @@ export default function Navbar({ currentLang }: NavbarProps) {
         <div className="flex md:hidden items-center gap-4">
           <button
             onClick={toggleTheme}
-            className="text-neutral-500 dark:text-[#9b9790] p-1 flex items-center justify-center"
+            className="text-neutral-500 cursor-pointer dark:text-[#9b9790] p-1 flex items-center justify-center"
             aria-label={resolvedTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
           >
             {themeIcon}
