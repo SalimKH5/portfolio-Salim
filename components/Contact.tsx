@@ -1,9 +1,9 @@
 'use client'
 
 import { useState, useRef } from 'react'
-import { motion, useInView, AnimatePresence } from 'framer-motion'
+import { motion, useInView, AnimatePresence, type Variants } from 'framer-motion'
 import SectionHeader from './SectionHeader'
-import { type Variants } from 'framer-motion'
+
 interface ContactProps {
   contactUI: {
     email: string
@@ -48,10 +48,19 @@ const SOCIAL_LINKS = (contactUI: ContactProps['contactUI']) => [
 function validate(form: FormFields): FormErrors {
   const errors: FormErrors = {}
   if (!form.name.trim()) errors.name = 'Name is required'
-  if (!form.email.trim()) errors.email = 'Email is required'
-  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) errors.email = 'Invalid email address'
-  if (!form.message.trim()) errors.message = 'Message is required'
-  else if (form.message.trim().length < 10) errors.message = 'Message must be at least 10 characters'
+  
+  if (!form.email.trim()) {
+    errors.email = 'Email is required'
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+    errors.email = 'Invalid email address'
+  }
+  
+  if (!form.message.trim()) {
+    errors.message = 'Message is required'
+  } else if (form.message.trim().length < 10) {
+    errors.message = 'Message must be at least 10 characters'
+  }
+  
   return errors
 }
 
@@ -67,7 +76,7 @@ const itemVariants: Variants = {
     y: 0,
     transition: {
       duration: 0.5,
-      ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 }
@@ -91,7 +100,8 @@ export default function Contact({ contactUI }: ContactProps) {
   const handleChange = (field: keyof FormFields, value: string) => {
     const updated = { ...form, [field]: value }
     setForm(updated)
-    // Clear error as user types if field was already touched
+    
+    // Clear error dynamically as the user types if the field was already touched
     if (touched[field]) {
       const fieldErrors = validate(updated)
       setErrors((prev) => ({ ...prev, [field]: fieldErrors[field] }))
@@ -100,21 +110,49 @@ export default function Contact({ contactUI }: ContactProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    
+    // Force validation on all fields
     const allTouched = { name: true, email: true, message: true }
     setTouched(allTouched)
     const fieldErrors = validate(form)
     setErrors(fieldErrors)
+    
     if (Object.keys(fieldErrors).length > 0) return
 
     setSending(true)
-    // Simulate async send — replace with your actual API call
-    await new Promise((r) => setTimeout(r, 1200))
-    setSending(false)
-    setSent(true)
-    setTimeout(() => setSent(false), 4000)
-    setForm({ name: '', email: '', message: '' })
-    setTouched({})
-    setErrors({})
+    
+    try {
+      // Submitting to Web3Forms using your unique access key
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "ecc21fca-47a1-43b9-9b18-280a1075fd44", 
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        setSent(true)
+        setForm({ name: '', email: '', message: '' }) // Clear form
+        setTouched({})
+        setErrors({})
+        setTimeout(() => setSent(false), 4000)
+      } else {
+        console.error("Failed to send message:", result)
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+    } finally {
+      setSending(false)
+    }
   }
 
   const inputCls = (field: keyof FormFields) =>
@@ -197,7 +235,7 @@ export default function Contact({ contactUI }: ContactProps) {
                 <AnimatePresence>
                   {touched[key] && errors[key] && (
                     <motion.p
-                      className="mt-1.5 font-mono text-[11px] text-red-400 dark:text-red-400"
+                      className="mt-1.5 font-mono text-[11px] text-red-500 dark:text-red-400"
                       initial={{ opacity: 0, y: -4 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -4 }}
@@ -211,7 +249,7 @@ export default function Contact({ contactUI }: ContactProps) {
             ))}
           </div>
 
-          {/* Message */}
+          {/* Message Textarea */}
           <div>
             <label className={labelCls}>{contactUI.messageLabel}</label>
             <textarea
@@ -224,7 +262,7 @@ export default function Contact({ contactUI }: ContactProps) {
             <AnimatePresence>
               {touched.message && errors.message && (
                 <motion.p
-                  className="mt-1.5 font-mono text-[11px] text-red-400 dark:text-red-400"
+                  className="mt-1.5 font-mono text-[11px] text-red-500 dark:text-red-400"
                   initial={{ opacity: 0, y: -4 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -4 }}
@@ -258,7 +296,7 @@ export default function Contact({ contactUI }: ContactProps) {
                   exit={{ opacity: 0, y: -6 }}
                   transition={{ duration: 0.2 }}
                 >
-                  {/* Spinner */}
+                  {/* Tailwind Spinner */}
                   <svg className="animate-spin w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />

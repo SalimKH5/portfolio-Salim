@@ -5,6 +5,7 @@
     "AboutSectionTitle": "About Me",
    "projectsSectionTitle": "Projects",
   "experienceSectionTitle": "Experience",
+  "skillsSectionTitle": "Skills",
   "location": "Île-de-France, France 🇫🇷",
   "available": true,
   "bio": [
@@ -56,23 +57,9 @@
     }
   ],
   "skills": [
-    {
-      "name": "AI & Data Engineering",
-      "icon": "ti-brain",
-      "color": "blue",
-      "tags": [
-        "Python",
-        "RAG (Retrieval-Augmented Gen)",
-        "Claude LLM",
-        "OpenAI",
-        "Vector Embeddings",
-        "Pandas",
-        "Apache Spark"
-      ]
-    },
-    {
+     {
       "name": "Backend Core",
-      "icon": "ti-server",
+      "icon": "FaServer",
       "color": "teal",
       "tags": [
         ".NET",
@@ -87,7 +74,7 @@
     },
     {
       "name": "Frontend Modern",
-      "icon": "ti-layout",
+      "icon": "FiLayout",
       "color": "purple",
       "tags": [
         "Next.js",
@@ -99,8 +86,23 @@
       ]
     },
     {
+      "name": "AI & Data Engineering",
+      "icon": "LuBrainCircuit",
+      "color": "blue",
+      "tags": [
+        "Python",
+        "RAG (Retrieval-Augmented Gen)",
+        "Claude LLM",
+        "OpenAI",
+        "Vector Embeddings",
+        "Pandas",
+        "Apache Spark"
+      ]
+    },
+   
+    {
       "name": "Database",
-      "icon": "ti-database",
+      "icon": "LuDatabaseZap",
       "color": "coral",
       "tags": [
         "PostgreSQL",
@@ -113,7 +115,7 @@
     },
     {
       "name": "DevOps & Architecture",
-      "icon": "ti-topology-complex",
+      "icon": "TbTopologyStarRing3",
       "color": "accent",
       "tags": [
         "Medallion Architecture",
@@ -152,30 +154,6 @@
         "Table booking with instant confirmation",
         "Online ordering — delivery & pickup",
         "Multi-restaurant menu & category browsing"
-      ]
-    },
-    {
-      "id": 1,
-      "title": "AI Knowledge Assistant (RAG Engine)",
-      "description": "An intelligent enterprise search and chat platform leveraging Retrieval-Augmented Generation (RAG). It ingests document repositories, generates semantic embeddings, and uses the Claude LLM to provide highly accurate, context-aware answers to user queries.",
-      "icon": "ti-robot",
-      "color": "blue",
-      "featured": true,
-      "github": "https://github.com/SalimKH5",
-      "live": "#",
-      "image": "",
-      "stack": [
-        "Python",
-        "Claude LLM",
-        "RAG",
-        "Typesense",
-        "Next.js",
-        "FastAPI"
-      ],
-      "highlights": [
-        "Semantic search using high-dimensional vector embeddings",
-        "Contextual answering powered by Claude LLM",
-        "Decoupled architecture with Python API and Next.js frontend"
       ]
     },
     {

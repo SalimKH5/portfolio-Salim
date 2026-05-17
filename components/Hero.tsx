@@ -84,7 +84,7 @@ export default function Hero({ role, name, heroUI,stats }: HeroProps) {
       </div>
 
       {/* Right Column */}
-      <motion.div {...fadeUp(0.2)} className="flex flex-col gap-4 items-end">
+      <motion.div {...fadeUp(0.2)} className="w-full flex items-center justify-center flex-col  gap-4 items-end">
         {/* Status badge */}
         <div className="flex items-center gap-2 px-4 py-2 border border-white/[0.12] rounded-full font-mono text-[12px] text-[#9b9790] whitespace-nowrap">
           <span className="w-[7px] h-[7px] rounded-full bg-[#34d399] animate-status-dot flex-shrink-0" />
@@ -92,9 +92,9 @@ export default function Hero({ role, name, heroUI,stats }: HeroProps) {
         </div>
 
         {/* Stat cards displaying visual sidecar slots */}
-        <div className="flex flex-col gap-2">
+        <div className="flex md:flex-col gap-2">
           {stats && stats.map((s) => (
-            <div key={s.label} className="flex items-center gap-3">
+            <div key={s.label} className="flex flex-col md:flex-row items-center gap-3">
               {/* Image visualization block */}
               <div className="w-[120px] h-[60px] border border-white/[0.07] rounded-lg bg-[#111113] p-2 overflow-hidden flex items-center justify-center">
                 {s.imageUrl ? (

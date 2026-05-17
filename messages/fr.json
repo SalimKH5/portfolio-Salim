@@ -6,6 +6,7 @@
      "AboutSectionTitle": "À propos de moi",
   "projectsSectionTitle": "Projets",
   "experienceSectionTitle": "Expérience",
+   "skillsSectionTitle": "Compétences",
   "available": true,
   "bio": [
     "Bonjour, je suis Salim — un développeur fullstack et ingénieur data basé en France, avec plus de 3 ans d'expérience professionnelle. Je me spécialise dans la création de ponts entre des architectures web robustes et des systèmes intelligents pilotés par l'IA.",
@@ -57,22 +58,8 @@
   ],
   "skills": [
     {
-      "name": "IA & Ingénierie Data",
-      "icon": "ti-brain",
-      "color": "blue",
-      "tags": [
-        "Python",
-        "RAG (Génération Augmentée par la Recherche)",
-        "Claude LLM",
-        "OpenAI",
-        "Embeddings Vectoriels",
-        "Pandas",
-        "Apache Spark"
-      ]
-    },
-    {
       "name": "Cœur Backend",
-      "icon": "ti-server",
+      "icon": "FaServer",
       "color": "teal",
       "tags": [
         ".NET",
@@ -87,7 +74,7 @@
     },
     {
       "name": "Frontend Moderne",
-      "icon": "ti-layout",
+      "icon": "FiLayout",
       "color": "purple",
       "tags": [
         "Next.js",
@@ -99,8 +86,23 @@
       ]
     },
     {
+      "name": "IA & Ingénierie Data",
+      "icon": "LuBrainCircuit",
+      "color": "blue",
+      "tags": [
+        "Python",
+        "RAG (Génération Augmentée par la Recherche)",
+        "Claude LLM",
+        "OpenAI",
+        "Embeddings Vectoriels",
+        "Pandas",
+        "Apache Spark"
+      ]
+    },
+    
+    {
       "name": "Base de Données",
-      "icon": "ti-database",
+      "icon": "LuDatabaseZap",
       "color": "coral",
       "tags": [
         "PostgreSQL",
@@ -113,7 +115,7 @@
     },
     {
       "name": "DevOps & Architecture",
-      "icon": "ti-topology-complex",
+      "icon": "TbTopologyStarRing3",
       "color": "accent",
       "tags": [
         "Architecture Médaillon",
@@ -152,30 +154,6 @@
         "Réservation de table avec confirmation instantanée",
         "Commande en ligne — livraison & à emporter",
         "Navigation de menus multi-restaurants & par catégories"
-      ]
-    },
-    {
-      "id": 1,
-      "title": "Assistant de Connaissances IA (Moteur RAG)",
-      "description": "Une plateforme de recherche et de chat d'entreprise intelligente exploitant la Génération Augmentée par la Recherche (RAG). Elle ingère des dépôts de documents, génère des embeddings sémantiques et utilise le LLM Claude pour fournir des réponses très précises et contextualisées aux requêtes des utilisateurs.",
-      "icon": "ti-robot",
-      "color": "blue",
-      "featured": true,
-      "github": "https://github.com/SalimKH5",
-      "live": "#",
-      "image": "",
-      "stack": [
-        "Python",
-        "Claude LLM",
-        "RAG",
-        "Typesense",
-        "Next.js",
-        "FastAPI"
-      ],
-      "highlights": [
-        "Recherche sémantique utilisant des embeddings vectoriels en haute dimension",
-        "Réponses contextuelles propulsées par le LLM Claude",
-        "Architecture découplée avec API Python et frontend Next.js"
       ]
     },
     {
