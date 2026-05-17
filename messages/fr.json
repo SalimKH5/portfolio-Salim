@@ -1,0 +1,332 @@
+{
+  "name": "Salim Khadir",
+  "initials": "SK",
+  "role": "Ingénieur Fullstack & IA",
+  "location": "Île-de-France, France 🇫🇷",
+     "AboutSectionTitle": "À propos de moi",
+  "projectsSectionTitle": "Projets",
+  "experienceSectionTitle": "Expérience",
+  "available": true,
+  "bio": [
+    "Bonjour, je suis Salim — un développeur fullstack et ingénieur data basé en France, avec plus de 3 ans d'expérience professionnelle. Je me spécialise dans la création de ponts entre des architectures web robustes et des systèmes intelligents pilotés par l'IA.",
+    "Je conçois des applications très performantes et évolutives en utilisant Next.js pour le frontend, et j'élabore des backends sécurisés de niveau entreprise avec .NET et Python.",
+    "Actuellement, je me concentre fortement sur l'intersection de l'Ingénierie des Données et de l'Intelligence Artificielle. J'intègre activement des Grands Modèles de Langage (comme Claude) et des pipelines RAG (Génération Augmentée par la Recherche) dans des applications modernes, transformant des données brutes en insights interactifs et exploitables."
+  ],
+  "stats": [
+    {
+      "num": "3+",
+      "label": "Années d'Exp."
+    },
+    {
+      "num": "IA/LLM",
+      "label": "Intégration"
+    },
+    {
+      "num": "M2",
+      "label": "Ingénierie Data"
+    }
+  ],
+  "heroUI": {
+    "description": "Je construis des **applications web rapides et évolutives** — des frontends parfaits aux architectures backend robustes. Passionné par le code propre et les excellentes expériences utilisateur.",
+    "viewWork": "Voir mon travail",
+    "getInTouch": "Me contacter",
+    "available": "Disponible pour de nouveaux projets"
+  },
+  "info": [
+    {
+      "key": "Lieu",
+      "value": "Île-de-France, France 🇫🇷"
+    },
+    {
+      "key": "Spécialité",
+      "value": "Ingénierie Web & Systèmes IA (RAG/LLMs)"
+    },
+    {
+      "key": "Langues",
+      "value": "Français · Anglais · Arabe"
+    },
+    {
+      "key": "Formation",
+      "value": "Master en Ingénierie des Données"
+    },
+    {
+      "key": "Statut",
+      "value": "À l'écoute d'opportunités",
+      "accent": "teal"
+    }
+  ],
+  "skills": [
+    {
+      "name": "IA & Ingénierie Data",
+      "icon": "ti-brain",
+      "color": "blue",
+      "tags": [
+        "Python",
+        "RAG (Génération Augmentée par la Recherche)",
+        "Claude LLM",
+        "OpenAI",
+        "Embeddings Vectoriels",
+        "Pandas",
+        "Apache Spark"
+      ]
+    },
+    {
+      "name": "Cœur Backend",
+      "icon": "ti-server",
+      "color": "teal",
+      "tags": [
+        ".NET",
+        "C#",
+        "Python",
+        "FastAPI",
+        "Node.js",
+        "NestJS",
+        "REST",
+        "Auth JWT"
+      ]
+    },
+    {
+      "name": "Frontend Moderne",
+      "icon": "ti-layout",
+      "color": "purple",
+      "tags": [
+        "Next.js",
+        "React.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Redux",
+        "Framer Motion"
+      ]
+    },
+    {
+      "name": "Base de Données",
+      "icon": "ti-database",
+      "color": "coral",
+      "tags": [
+        "PostgreSQL",
+        "Typesense",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Prisma"
+      ]
+    },
+    {
+      "name": "DevOps & Architecture",
+      "icon": "ti-topology-complex",
+      "color": "accent",
+      "tags": [
+        "Architecture Médaillon",
+        "Docker",
+        "Actions GitHub",
+        "Vercel",
+        "Linux",
+        "Git"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 0,
+      "title": "MunchMate & MunchMate Pro",
+      "description": "Une plateforme complète de gestion de restaurants à double interface. Les utilisateurs finaux peuvent découvrir des lieux locaux, réserver des tables et commander en ligne via le portail principal. Pendant ce temps, les propriétaires de restaurants utilisent le puissant tableau de bord d'administration pour créer leurs fiches, gérer les menus et traiter les réservations entrantes. La plateforme est propulsée par un backend .NET robuste sécurisé par authentification JWT.",
+      "icon": "ti-tools-kitchen-2",
+      "color": "coral",
+      "featured": true,
+      "github": "https://github.com/SalimKH5",
+      "live": "https://munchmate.salimfree.com/",
+      "adminUrl": "https://pro.salimfree.com/",
+      "image": "https://munchmate.salimfree.com/_next/image?url=%2FBanner3.jpg&w=3840&q=75",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        ".NET",
+        "Auth JWT",
+        "API REST",
+        "Tailwind CSS",
+        "PostgreSQL"
+      ],
+      "highlights": [
+        "Tableau de bord d'administration dédié (Pro) pour la gestion des restaurants",
+        "Architecture backend sécurisée construite avec .NET et JWT",
+        "Réservation de table avec confirmation instantanée",
+        "Commande en ligne — livraison & à emporter",
+        "Navigation de menus multi-restaurants & par catégories"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Assistant de Connaissances IA (Moteur RAG)",
+      "description": "Une plateforme de recherche et de chat d'entreprise intelligente exploitant la Génération Augmentée par la Recherche (RAG). Elle ingère des dépôts de documents, génère des embeddings sémantiques et utilise le LLM Claude pour fournir des réponses très précises et contextualisées aux requêtes des utilisateurs.",
+      "icon": "ti-robot",
+      "color": "blue",
+      "featured": true,
+      "github": "https://github.com/SalimKH5",
+      "live": "#",
+      "image": "",
+      "stack": [
+        "Python",
+        "Claude LLM",
+        "RAG",
+        "Typesense",
+        "Next.js",
+        "FastAPI"
+      ],
+      "highlights": [
+        "Recherche sémantique utilisant des embeddings vectoriels en haute dimension",
+        "Réponses contextuelles propulsées par le LLM Claude",
+        "Architecture découplée avec API Python et frontend Next.js"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Snaply",
+      "description": "Un clone de plateforme de médias sociaux entièrement fonctionnel avec authentification des utilisateurs, téléchargement de photos et interactions en temps réel. Tire parti des routes API de Next.js et du rendu côté serveur pour des performances optimales.",
+      "icon": "ti-brand-instagram",
+      "color": "purple",
+      "featured": false,
+      "github": "https://github.com/SalimKH5/Snaply",
+      "live": "https://snaply-git-main-khadir-salims-projects.vercel.app/",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-af3bf.appspot.com/o/instagrame%20clone.png?alt=media&token=55d1fc1e-bc3a-4147-8331-41a90dae62cd",
+      "stack": [
+        "Next.js",
+        "React.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "highlights": []
+    },
+    {
+      "id": 3,
+      "title": "REST Countries",
+      "description": "Une application web pour explorer et filtrer les pays par population, région et langue. Construite avec React.js et TypeScript pour une expérience de visualisation de données réactive et interactive.",
+      "icon": "ti-world",
+      "color": "teal",
+      "featured": false,
+      "github": "https://github.com/SalimKH5/rest-countries-master",
+      "live": "https://rest-countries-master-git-main-khadir-salims-projects.vercel.app/",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-af3bf.appspot.com/o/rest%20country.png?alt=media&token=1d8cded7-e98c-4d3b-93e0-60402faae152",
+      "stack": [
+        "React.js",
+        "TypeScript",
+        "API REST",
+        "Tailwind CSS"
+      ],
+      "highlights": []
+    },
+    {
+      "id": 4,
+      "title": "Clone YouTube",
+      "description": "Une interface de streaming vidéo construite avec React.js et une API externe. Comprend la lecture de vidéos, une fonctionnalité de recherche dynamique et une architecture front-end optimisée.",
+      "icon": "ti-brand-youtube",
+      "color": "accent",
+      "featured": false,
+      "github": "https://github.com/SalimKH5/Youtube-clone",
+      "live": "https://gregarious-monstera-5e42e6.netlify.app/",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-af3bf.appspot.com/o/youtube.png?alt=media&token=3bbadc37-f105-42e9-b96d-11b1eb9ef8f8",
+      "stack": [
+        "React.js",
+        "API REST",
+        "CSS3",
+        "HTML5"
+      ],
+      "highlights": []
+    },
+    {
+      "id": 5,
+      "title": "Offres d'Emploi Statiques",
+      "description": "Une page d'offres d'emploi présentant une gestion d'état complexe pour filtrer par titre, emplacement et type de poste. Conçue pour une expérience de recherche efficace et instantanée.",
+      "icon": "ti-briefcase",
+      "color": "purple",
+      "featured": false,
+      "github": "https://github.com/SalimKH5/static-job-listings-master",
+      "live": "https://salimkh5.github.io/static-job-listings-master/",
+      "image": "https://firebasestorage.googleapis.com/v0/b/portfolio-af3bf.appspot.com/o/static-job-listings.png?alt=media&token=8a8beb9d-e48f-4efd-b835-2f2b50ee6ccd",
+      "stack": [
+        "React.js",
+        "CSS3",
+        "HTML5"
+      ],
+      "highlights": []
+    }
+  ],
+  "experience": [
+    {
+      "period": "Oct 2024 — Présent",
+      "type": "Temps plein",
+      "role": "Développeur Fullstack",
+      "company": "La Plume d'or et d'argent",
+      "location": "21 rue Gambetta, Houilles, Île-de-France",
+      "bullets": [
+        "Développement et optimisation des plateformes numériques de l'entreprise.",
+        "Conception de modules backend réactifs, sécurisés et conviviaux.",
+        "Garantie de hautes performances et d'une grande fiabilité sur l'ensemble de la stack web."
+      ]
+    },
+    {
+      "period": "Oct 2023 — Sep 2024",
+      "type": "Stage",
+      "role": "Développeur Frontend",
+      "company": "Immersive Digital Développement (IDD)",
+      "location": "Cheraga, Algérie",
+      "bullets": [
+        "Création d'interfaces utilisateur intuitives et engageantes en utilisant Next.js.",
+        "Construction de solutions web dynamiques et très réactives pour des applications orientées client.",
+        "Étroite collaboration avec les équipes de conception et d'ingénierie pour affiner les architectures UX/UI."
+      ]
+    },
+    {
+      "period": "Aoû 2023 — Oct 2023",
+      "type": "Indépendant",
+      "role": "Développeur Fullstack",
+      "company": "Algitech.sol",
+      "location": "À distance",
+      "bullets": [
+        "Développement de la logique backend essentielle et des structures de base de données pour une plateforme e-commerce.",
+        "Optimisation des requêtes de données et amélioration des temps de chargement globaux de l'application."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "Oct 2024 — Présent",
+      "degree": "Master 2 — Ingénierie des Données",
+      "institution": "Digital School of Paris",
+      "icon": "ti-school"
+    },
+    {
+      "period": "Sep 2021 — Jui 2023",
+      "degree": "Master — Bio-informatique",
+      "institution": "USTHB — Université des Sciences et de la Technologie, Algérie",
+      "icon": "ti-microscope"
+    },
+    {
+      "period": "Juin 2021",
+      "degree": "Licence — Informatique",
+      "institution": "USTHB — Université des Sciences et de la Technologie, Algérie",
+      "icon": "ti-device-desktop"
+    }
+  ],
+  "contactUI": {
+      "email": "Khadir.salim1@email.com",
+  "github": "https://github.com/SalimKH5",
+  "linkedin": "https://linkedin.com/in/salimkhadir",
+    "sectionTitle": "Contact",
+    "headingLine1": "Travaillons",
+    "headingLine2": "ensemble.",
+    "description": "Vous avez un projet en tête ou vous recherchez un développeur fullstack pour rejoindre votre équipe ? N'hésitez pas à me contacter.",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom",
+    "emailLabel": "Email",
+    "emailPlaceholder": "votre@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Parlez-moi de votre projet...",
+    "sendButton": "Envoyer le message",
+    "sentButton": "Envoyé !"
+  },
+  "footerUI": {
+    "builtWith": "Propulsé par Next.js & Tailwind",
+    "backToTop": "retour en haut"
+  }
+}
